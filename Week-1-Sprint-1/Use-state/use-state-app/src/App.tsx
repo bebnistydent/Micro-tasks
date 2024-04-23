@@ -5,25 +5,25 @@ import './App.css';
 function App() {
 
 
-  let [a,setA] = useState(1);
+  let [b,setb] = useState(1);
 
 const onClickHandler = () => {
-      setA(++a);
-  console.log(a);
+      setb(++b);
+  console.log(b);
 };
 
 
 const onClickHandler2 = () => {
-  setA(a = 0);
-console.log(a);
+  setb(b = 0);
+console.log(b);
 };
 
   
 
   return (
     <div className="App">
-      <h1>{a}</h1>
-      <button onClick={onClickHandler}>Number</button>
+      <h1>{b}</h1>
+      <button onClick={onClickHandler}>PlusOne</button>
       <button onClick={onClickHandler2}>Zero</button>
 
     </div>
